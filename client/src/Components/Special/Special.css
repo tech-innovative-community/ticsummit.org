@@ -1,0 +1,117 @@
+.Special {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background: var(--white);
+  padding: 20px 10%;
+  transition: var(--trans);
+  font-family: "inherit";
+}
+
+.Special p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.Special p span {
+  font-weight: bold;
+}
+
+.Special img {
+  width: 100%;
+}
+
+.Special .specialContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.specialContainer .leftSpecial {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  color: var(--white);
+  height: 90;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.specialContainer .leftSpecial .specials {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+  background: var(--light__blue);
+  height: 150px;
+}
+.specialContainer .leftSpecial .specials .p {
+  width: 20%;
+  background: var(--light__blue);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 90px;
+  text-align: center;
+  color: var(--yellow);
+  transition: var(--trans);
+  font-weight: bold;
+}
+
+.specialContainer .leftSpecial .specials .text {
+  width: 75%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  transition: var(--trans);
+}
+
+.Special .specialContainer .rightSpecial {
+  height: 70vh;
+  width: 40%;
+}
+
+@media (max-width: 850px) {
+  .Special {
+    height: 100%;
+  }
+  .Special .specialContainer {
+    flex-direction: column;
+  }
+
+  .specialContainer .leftSpecial {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--white);
+    height: 90;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .specialContainer .leftSpecial .specials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--light__blue);
+    height: 30%;
+    margin: 10px 0;
+  }
+
+  .specialContainer .leftSpecial .specials .text {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    transition: var(--trans);
+    padding-bottom: 20px;
+  }
+
+  .Special .specialContainer .rightSpecial {
+    height: 50vh;
+    width: 100%;
+  }
+}

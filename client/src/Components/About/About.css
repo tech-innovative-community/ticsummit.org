@@ -1,0 +1,136 @@
+.About {
+  display: flex;
+  height: 114vh;
+  background: var(--light__blue);
+  transition: all var(--trans);
+  width: 100%;
+  color: var(--white);
+  font-family: inherit;
+}
+
+.About img {
+  width: 100%;
+}
+
+.About .aboutContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutContainer .topContainer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+.aboutContainer .topContainer p {
+  font-size: 3em;
+  width: 50%;
+  font-weight: bold;
+}
+.aboutContainer .topContainer .p {
+  width: 50%;
+}
+
+.aboutContainer .bottomContainer {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  padding: 30px 10%;
+  background: var(--blue);
+}
+
+.aboutContainer .bottomContainer .p {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.aboutContainer .bottomContainer .img {
+  width: 50%;
+}
+
+.aboutContainer .bottomContainer .img .img1 {
+  width: 100%;
+  height: 205px;
+}
+
+.aboutContainer .bottomContainer .img .img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutContainer .bottomContainer .img .img2 {
+  width: 100%;
+  position: relative;
+  height: 205px;
+}
+
+.aboutContainer .bottomContainer .img .img2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 50px;
+  top: -40px;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .About {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--light__blue);
+    transition: all var(--trans);
+    color: var(--white);
+  }
+  .aboutContainer .topContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 10%;
+  }
+
+  .aboutContainer .topContainer p {
+    font-size: 2em;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .aboutContainer .topContainer .p {
+    width: 100%;
+  }
+
+  .aboutContainer .bottomContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10%;
+    background: var(--blue);
+  }
+
+  .aboutContainer .bottomContainer .p {
+    width: 100%;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .aboutContainer .bottomContainer .img {
+    width: 100%;
+  }
+
+  .aboutContainer .bottomContainer .img .img2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    object-fit: cover;
+  }
+}

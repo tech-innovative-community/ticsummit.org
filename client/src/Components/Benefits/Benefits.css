@@ -1,0 +1,128 @@
+.Benefits {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  padding: 0 10%;
+  transition: var(--trans);
+  margin-bottom: 40px;
+  font-family: "inherit", serif;
+}
+
+.Benefits .benefitsContainer {
+  color: var(--white);
+  width: 100%;
+  background: var(--blue);
+  height: 100%;
+  transition: var(--trans);
+  padding: 3rem 4%;
+}
+
+.Benefits .benefitsContainer > p {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "inherit", sans-serif;
+}
+
+.Benefits .benefitsContainer > .benefits {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 50px 0;
+  transition: all var(--trans);
+}
+
+.Benefits .benefitsContainer > .benefits.first {
+  margin-top: 40px;
+}
+
+.Benefits .benefitsContainer > .benefits .leftBenefits {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 10px;
+  position: relative;
+  color: var(--yellow);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.Benefits .benefitsContainer > .benefits .leftBenefits p {
+  font-size: 2.5em;
+  margin-left: 10px;
+  position: absolute;
+  left: 40px;
+  line-height: 0.8;
+  top: 0;
+  font-family: "inherit", sans-serif;
+}
+
+.Benefits .benefitsContainer > .benefits .leftBenefits i {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+.Benefits .benefitsContainer > .benefits .rightBenefits {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  .Benefits .benefitsContainer > p {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  .Benefits .benefitsContainer > .benefits {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px 0;
+    transition: all var(--trans);
+  }
+
+  .Benefits .benefitsContainer > .benefits .leftBenefits {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 10px;
+    position: relative;
+    color: var(--yellow);
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .Benefits .benefitsContainer > .benefits .leftBenefits p {
+    font-size: 1em;
+    margin-left: 0px;
+    position: initial;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+
+  .Benefits .benefitsContainer > .benefits .leftBenefits i {
+    font-size: 1em;
+    margin-left: 0px;
+    position: initial;
+    margin-bottom: 15px;
+  }
+
+  .Benefits .benefitsContainer > .benefits .rightBenefits {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .Benefits .benefitsContainer > .benefits .rightBenefits br {
+    display: none;
+  }
+}

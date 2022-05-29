@@ -1,0 +1,109 @@
+.Stay {
+  width: 100%;
+  height: 80vh;
+  background: var(--light__blue);
+  transition: var(--trans);
+  padding: 5px 10%;
+  font-family: "inherit";
+}
+
+.Stay .stayContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.Stay .stayContainer .leftContainer {
+  width: 45%;
+  color: var(--white);
+}
+
+.Stay .stayContainer .leftContainer .heading {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.Stay .stayContainer .rightContainer {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Stay .stayContainer .rightContainer input {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background: var(--yellow);
+  outline: none;
+  color: gray;
+  font-size: 15px;
+  font-weight: 600;
+  transition: var(--trans);
+  border-radius: 5px;
+}
+
+.Stay .stayContainer .rightContainer input:focus {
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Stay .stayContainer .rightContainer input::placeholder {
+  font-weight: normal;
+}
+
+.Stay .stayContainer .rightContainer button {
+  cursor: pointer;
+  padding: 6px 40px;
+  border: none;
+  background: var(--blue);
+  color: var(--yellow);
+  transition: var(--trans);
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.Stay .stayContainer .rightContainer button:hover {
+  border-radius: 20px;
+}
+
+@media (max-width: 850px) {
+  .Stay .stayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Stay .stayContainer .leftContainer {
+    width: 100%;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+  .Stay .stayContainer .leftContainer .heading {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--yellow);
+    margin-bottom: 20px;
+  }
+
+  .Stay .stayContainer .rightContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .Stay .stayContainer .rightContainer input {
+    width: 100%;
+  }
+}

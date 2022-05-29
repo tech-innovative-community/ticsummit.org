@@ -1,0 +1,17 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --light__blue: #235ea0;
+  --blue: #03204b;
+  --yellow: #f7cb48;
+  --border: 0.1rem solid white;
+  --trans: 0.5s ease-in-out;
+  --pink: #f748ae;
+  --grey: rgb(228, 225, 225);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

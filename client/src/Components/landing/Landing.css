@@ -1,0 +1,113 @@
+.Landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: var(--light__blue);
+  transition: var(--trans);
+  font-family: "inherit";
+  padding: 5px 10%;
+}
+
+.Landing .landingContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.Landing .landingContainer .leftLanding {
+  width: 40%;
+  height: 90%;
+}
+
+.Landing .landingContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Landing .landingContainer .rightLanding {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.rightLanding .header {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.rightLanding .desc {
+  color: var(--white);
+  margin-top: 20px;
+  line-height: 30px;
+  font-size: 1rem;
+}
+
+.rightLanding .header span {
+  color: var(--pink);
+  position: relative;
+}
+.rightLanding .header span::after {
+  content: "";
+  width: 10%;
+  height: 3px;
+  background: var(--pink);
+  display: block;
+  margin: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.rightLanding .applyBtn {
+  margin-top: 70px;
+}
+
+@media (max-width: 850px) {
+  .Landing {
+    height: 100%;
+    padding: 20px 10%;
+  }
+  .Landing .landingContainer {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .Landing .landingContainer .leftLanding {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Landing .landingContainer .rightLanding {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+  }
+
+  .rightLanding .header {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  .rightLanding .desc {
+    color: var(--white);
+    margin-top: 20px;
+    line-height: initial;
+    font-size: 1rem;
+  }
+
+  .rightLanding .applyBtn {
+    margin-top: 20px;
+  }
+}

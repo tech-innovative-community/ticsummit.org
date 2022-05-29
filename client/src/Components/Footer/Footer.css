@@ -1,0 +1,192 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--blue);
+  transition: var(--trans);
+  padding: 50px 10%;
+  height: 45vh;
+  color: var(--white);
+  position: relative;
+  font-family: "inherit";
+}
+
+.Footer > p {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.Footer > button {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+.Footer .footerContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.Footer .footerContainer .content {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  height: 100%;
+}
+
+.Footer .footerContainer .content p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.Footer .footerContainer .content p span {
+  color: var(--yellow);
+}
+
+.footerContainer .content ul {
+  list-style: none;
+}
+.footerContainer .content ul .items {
+  display: flex;
+  align-items: center;
+}
+.footerContainer .content ul .items li {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 2px 0;
+}
+
+.footerContainer .content ul .items > span {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: var(--yellow);
+}
+
+.Footer .footerContainer .socials {
+  width: 5%;
+  position: relative;
+  height: 100%;
+}
+
+.Footer .footerContainer .socials p {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -60px;
+  top: 80px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  /* margin: auto; */
+  height: 15px;
+  font-size: 12px;
+  transition: var(--trans);
+}
+
+.Footer .footerContainer .socials .links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.Footer .footerContainer .socials .links a {
+  height: 25px;
+  width: 25px;
+}
+.Footer .footerContainer .socials .links a i {
+  font-size: 2em;
+}
+
+.Footer .footerContainer > button {
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  color: var(--blue);
+  height: 40px;
+  width: 40px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--yellow);
+}
+
+.Footer .footerContainer > button a {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  background: var(--yellow);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+  .Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--blue);
+    transition: var(--trans);
+    padding: 50px 10%;
+    height: 100%;
+    color: var(--white);
+    position: relative;
+  }
+
+  .Footer .footerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .Footer .footerContainer .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  .Footer .footerContainer .socials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Footer .footerContainer .socials p {
+    transform: rotate(0deg);
+    position: initial;
+    font-size: 12px;
+    transition: var(--trans);
+  }
+
+  .Footer .footerContainer .socials .links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}

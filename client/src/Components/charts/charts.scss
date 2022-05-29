@@ -1,0 +1,16 @@
+.Charts {
+  display: flex;
+  padding: 10px;
+  height: 50%;
+  max-height: 50%;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: var(--trans);
+  background: blue;
+  width: 100%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    height: 40%;
+    margin-top: 10px;
+  }
+}

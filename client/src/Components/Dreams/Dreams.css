@@ -1,0 +1,29 @@
+.Dreams {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10%;
+  transition: var(--trans);
+  background: var(--white);
+
+  font-family: "inherit";
+}
+
+.Dreams p:nth-child(1) {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.Dreams .p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+  .Dreams p:nth-child(1) {
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: var(--blue);
+    font-weight: bold;
+  }
+}

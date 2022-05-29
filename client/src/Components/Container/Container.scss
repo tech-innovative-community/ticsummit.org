@@ -1,0 +1,15 @@
+.Container {
+  float: right;
+  width: 80%;
+  transition: var(--trans);
+  background: whitesmoke;
+  min-height: calc(100vh - 70px);
+  @media screen and (max-width: 800px) {
+    height: 100%;
+    // float: right;
+    width: 100%;
+    transition: var(--trans);
+    background: gray;
+    height: calc(150vh - 70px);
+  }
+}

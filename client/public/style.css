@@ -1,0 +1,21 @@
+@import url("//db.onlinewebfonts.com/t/f7afe66fe9d022d7dc7fd57e4adc078f.eot");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "GT Walsheim", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

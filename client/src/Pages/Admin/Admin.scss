@@ -1,0 +1,195 @@
+.Admin {
+  min-height: calc(100vh - 70px);
+  background: whitesmoke;
+
+  overflow: hidden;
+  .menus {
+    display: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .menus {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      height: 30px;
+      margin-top: 10px;
+      margin-left: 10px;
+      background: white;
+      padding: 5px;
+      cursor: pointer;
+      transition: var(--trans);
+      width: 30px;
+      justify-content: space-between;
+
+      span {
+        height: 5px;
+        width: 100%;
+        background-color: blue;
+        border-radius: 5px;
+      }
+    }
+    .ul {
+      position: fixed;
+      height: calc(100vh - 70px);
+      width: 50vw;
+      padding-bottom: 10px;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--light__blue);
+      transition: all var(--trans);
+      padding-top: 6rem;
+
+      &.off {
+        transition: var(--trans);
+      }
+
+      .toggle {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        padding: 10px;
+        color: var(--white);
+        background: var(--blue);
+        font-size: 5rem;
+        cursor: pointer;
+        transition: var(--trans);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(45deg);
+        outline: none;
+
+        z-index: 999;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        &:hover {
+          background: var(--white);
+          color: var(--blue);
+        }
+      }
+      .Sidebar__ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        transition: var(--trans);
+        padding-left: 5px;
+        width: 100%;
+        padding-right: 10px;
+
+        .activeLink {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 100px;
+          cursor: pointer;
+          width: 100%;
+          height: 40px;
+          margin: 2px 0;
+
+          &.on {
+            transition: var(--trans);
+            &::before {
+              content: "";
+              position: absolute;
+              transition: var(--trans);
+              left: 0;
+              background: var(--blue);
+              height: 100%;
+              width: 4px;
+              border-radius: 5px;
+              top: 0;
+            }
+
+            a {
+              background: var(--blue);
+              color: var(--white);
+            }
+          }
+          transition: var(--trans);
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+          a {
+            transition: var(--trans);
+            width: 100%;
+            margin-left: 5px;
+            margin-top: 1px;
+            padding: 5px;
+            background: var(--white);
+            border-radius: 5px;
+            color: var(--light__blue);
+            height: 100%;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            span {
+              transition: var(--trans);
+            }
+          }
+          &:hover {
+            transition: var(--trans);
+            a {
+              background: var(--blue);
+              span {
+                transition: var(--trans);
+                padding: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .sidebar_down {
+        .themes {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding-left: 10px;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+
+          .theme {
+            width: 15px;
+            height: 15px;
+            background: red;
+            transition: var(--trans);
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 2px;
+
+            &.lighttheme {
+              background: white;
+              margin-left: 0;
+            }
+
+            &.darktheme {
+              background: black;
+            }
+          }
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          transition: var(--trans);
+          padding-left: 10px;
+          text-transform: capitalize;
+          font-size: 10px;
+
+          img {
+            width: 40px;
+            margin-right: 5px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

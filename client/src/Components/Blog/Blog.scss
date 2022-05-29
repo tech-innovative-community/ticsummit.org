@@ -1,0 +1,111 @@
+.BlogsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: var(--white);
+  box-shadow: 0 0px 4px rgb(0, 0, 0, 0.7);
+  transition: var(--trans);
+  overflow: hidden;
+  border-radius: 5px;
+  height: 100%;
+  max-height: 300px;
+  margin: 10px;
+  img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  .blogCont {
+    padding: 10px;
+    transition: var(--trans);
+    position: relative;
+    height: 100%;
+    .message {
+      font-size: 15px;
+      font-weight: 300;
+      text-overflow: ellipsis;
+      margin-top: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 5px;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+    .date {
+      color: var(--blue);
+      font-size: 12px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .viewMore {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      width: 100%;
+      height: 30px;
+      color: var(--blue);
+      font-size: 15px;
+      font-weight: 500;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      cursor: pointer;
+
+      a {
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        background: transparent;
+      }
+    }
+
+    &.noImg {
+      .message {
+        font-size: 15px;
+        font-weight: 300;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 18;
+        -webkit-box-orient: vertical;
+      }
+
+      .date {
+        margin-top: 5px;
+        color: var(--blue);
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 400px;
+
+    .blogCont {
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.OneBlog {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 10%;
+  transition: var(--trans);
+
+  .oneContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    @media screen and (max-width: 800px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
