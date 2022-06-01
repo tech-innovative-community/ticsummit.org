@@ -90,6 +90,10 @@
 }
 
 .forms.activeSide .signUpForm {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   left: 0;
   transition-delay: 0.2s;
 }

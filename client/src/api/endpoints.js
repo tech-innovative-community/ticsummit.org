@@ -1,4 +1,4 @@
-const host = "https://milesmorales.herokuapp.com";
+const host = "http://localhost:5000";
 
 export const registerRoute = `${host}/api/auth/register`;
 export const cloudinary =

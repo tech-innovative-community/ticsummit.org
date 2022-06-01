@@ -23,7 +23,16 @@ const Posts = () => {
       }
     };
     fetchPost();
+    console.log(posts);
   }, []);
+
+  if (posts.length === 0) {
+    return (
+      <div className="no__blog">
+        <p>No Blog Available Yet</p>
+      </div>
+    );
+  }
 
   return (
     <div className="app__post-finder">

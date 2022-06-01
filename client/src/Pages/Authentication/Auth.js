@@ -88,34 +88,7 @@ const Auth = () => {
             </form>
           </div>
           <div className="form signUpForm">
-            <form onSubmit={handleRegister}>
-              <h3>Sign In</h3>
-              <input
-                type="text"
-                placeholder="Username"
-                require
-                onChange={(e) => setUsername(e.target.value)}
-              />
-              <input
-                type="email"
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
-                require
-              />
-              <input
-                type="password"
-                placeholder="Password"
-                require
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <input
-                type="password"
-                placeholder="Confirm Password"
-                require
-                onChange={(e) => setPasswordAgain(e.target.value)}
-              />
-              <input type="submit" value="Register" />
-            </form>
+            <p>This feature isn't Available anymore!</p>
           </div>
         </div>
       </div>

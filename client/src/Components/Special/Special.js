@@ -1,6 +1,5 @@
 import React from "react";
 import "./Special.css";
-import specialImg from "../../Images/2.jpg";
 import ReactPlayer from "react-player/youtube";
 
 const Special = () => {
