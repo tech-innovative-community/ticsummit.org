@@ -15,6 +15,7 @@ import Admin from "./Pages/Admin/Admin";
 import Users from "./Components/Users/Users";
 import Dashboard from "./Components/Dashbord/Dashboard";
 import PostsAdmin from "./Components/posts/Posts";
+import Kanban from "./Pages/Kanban/Kanban";
 function App() {
   const { user } = useContext(AuthContext);
 
@@ -33,6 +34,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="users" element={<Users />} />
           <Route path="posts" element={<PostsAdmin />} />
+          <Route path="kanban" element={<Kanban />} />
         </Route>
         <Route path="/postBlog" element={user ? <PostBlog /> : <Home />} />
       </Routes>

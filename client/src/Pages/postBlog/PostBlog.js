@@ -62,8 +62,8 @@ const PostBlog = () => {
     <div className="postBlog">
       <div className="postBlogContainer">
         <div className="topContainer">
-          <img src={userId.pic} alt="" />
-          <p>{userId.username}</p>
+          <img src={userId?.pic} alt="" />
+          <p>{userId?.username}</p>
         </div>
         <div className="postContainer">
           <input

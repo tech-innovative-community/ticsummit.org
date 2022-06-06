@@ -7,6 +7,9 @@ const Sidebar = () => {
   const { user } = useContext(AuthContext);
   const data = user.user;
   const [active, setActive] = useState(1);
+  // const location = useLocation();
+  // const pathname = location.pathname.slice(2);
+  // console.log(pathname);
 
   const handleLogOut = () => {
     localStorage.removeItem("user");
@@ -39,6 +42,14 @@ const Sidebar = () => {
         >
           <Link to="/admin/posts">
             <span>posts</span>
+          </Link>
+        </li>
+        <li
+          onClick={() => setActive(4)}
+          className={active === 4 ? "activeLink on" : "activeLink"}
+        >
+          <Link to="/admin/kanban">
+            <span>Kanban</span>
           </Link>
         </li>
       </ul>

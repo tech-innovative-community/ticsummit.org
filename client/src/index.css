@@ -1,0 +1,10 @@
+@import url("//db.onlinewebfonts.com/t/f7afe66fe9d022d7dc7fd57e4adc078f.eot");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "GT Walsheim", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

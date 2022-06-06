@@ -82,20 +82,21 @@ const Footer = () => {
         <div className="socials">
           <p>Social Media Links</p>
           <div className="links">
-            <a href="#home">
+            <a href="https://www.instagram.com/tic_summit/">
               <i className="fa-brands fa-instagram-square"></i>
             </a>
             <a href="#home">
               <i className="fa-brands fa-whatsapp-square"></i>
             </a>
-            <a href="#home">
+            <a
+              href="https://www.facebook.com/TiCsummit/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fa-brands fa-facebook-square"></i>
             </a>
-            <a href="#home">
+            <a href="">
               <i className="fa-brands fa-twitter-square"></i>
-            </a>
-            <a href="#home">
-              <i className="fa-brands fa-instagram-square"></i>
             </a>
           </div>
         </div>
