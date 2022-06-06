@@ -15,6 +15,18 @@
 
 .ELegibility p span {
   color: var(--pink);
+  position: relative;
+}
+
+.ELegibility p span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  width: 100%;
+  background: var(--pink);
+  bottom: -5px;
+  transition: 0.5s ease-in-out;
 }
 
 .ELegibility .eLegibilityContainer {
@@ -54,12 +66,16 @@
 }
 
 @media (max-width: 850px) {
+  .ELegibility {
+    width: 100%;
+    height: 100%;
+  }
   .eLegibilityContainer .criteria .criteriaContent {
     width: 100%;
     background: var(--light__blue);
     transition: var(--trans);
     margin: 20px 0;
-    height: 30%;
+    height: 100%;
     padding: 20px;
     color: var(--white);
     display: flex;

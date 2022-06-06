@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import "./FAQ.css";
 
 const Questions = () => {
-  const [open, setOpen] = useState(false);
-  const [op, setOp] = useState(false);
-  const [ope, setOpe] = useState(false);
+  const [open, setOpen] = useState(0);
   return (
-    <div className="Questions">
+    <div className="Questions" id="faq">
       <p>ABOUT FAQs</p>
       <div className="faqContainer">
-        <div className={open ? "questions vissible" : "questions"}>
-          <p onClick={() => setOpen(!open)}>
+        <div className={open === 1 ? "questions vissible" : "questions"}>
+          <p onClick={() => open === setOpen(1)}>
             Why should you participate in the Tech Innovation Challenge?{" "}
-            <span className={open ? "plus rotate" : "plus"}>+</span>
+            <span className={open === 1 ? "plus rotate" : "plus"}>+</span>
           </p>
           <div className="answer">
             Universities have many competitions for entrepreneurs. Many
@@ -34,14 +32,14 @@ const Questions = () => {
             secondary schools? Absolutely amazing! You must all be very excited,
             just as we are. Because together we’re building the Cameroon we
             deserve, instead of always complaining. Get to work, and see you at
-            the Summit! Communications, TiC
+            the Summit!
           </div>
         </div>
-        <div className={ope ? "questions vissible1" : "questions"}>
-          <p onClick={() => setOpe(!ope)}>
+        <div className={open === 2 ? "questions vissible" : "questions"}>
+          <p onClick={() => setOpen(2)}>
             What are the different types of projects eligible for the Tech
             Innovation Challenge?
-            <span className={ope ? "plus rotate" : "plus"}>+</span>
+            <span className={open === 2 ? "plus rotate" : "plus"}>+</span>
           </p>
           <div className="answer">
             Well, the answer is simple: Any technology-based project that solves
@@ -57,20 +55,19 @@ const Questions = () => {
             them right after the summit. These could be the next Cardiopads. All
             this is for you; because great businesses in the world today started
             as small projects like these. Get to work, and see you at the
-            Summit! Communication, TiC.
+            Summit!
           </div>
         </div>
-        <div className={op ? "questions vissible2" : "questions"}>
-          <p onClick={() => setOp(!op)}>
+        <div className={open === 3 ? "questions vissible" : "questions"}>
+          <p onClick={() => setOpen(3)}>
             Why do you need us?{" "}
-            <span className={op ? "plus rotate" : "plus"}>+</span>
+            <span className={open === 3 ? "plus rotate" : "plus"}>+</span>
           </p>
           <div className="answer">
             We are ready to guide you as you build the very basic prototypes of
             your projects. We do not necessarily want you to build flying
             airplanes, we just want you to be innovative, hardworking, and to
             solve a problem. Get to work, and see you at the Summit!
-            Communications, TiC
           </div>
         </div>
       </div>

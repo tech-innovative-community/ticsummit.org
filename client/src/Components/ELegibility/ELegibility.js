@@ -19,7 +19,7 @@ const ELegibility = () => {
         <div className="criteria">
           <div className="criteriaContent">
             <div className="p">02</div>
-            <div className="text">Between the age os 11-20 years.</div>
+            <div className="text">Between the age of 11-20 years.</div>
           </div>
         </div>
         <div className="criteria">

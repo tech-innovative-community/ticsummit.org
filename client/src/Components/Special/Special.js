@@ -6,7 +6,7 @@ const Special = () => {
   return (
     <div className="Special">
       <p>
-        What makes TiC <span>Special</span>
+        What Makes <span>TiC Special</span>
       </p>
       <div className="specialContainer">
         <div className="leftSpecial">

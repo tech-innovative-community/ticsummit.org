@@ -10,22 +10,24 @@ const Footer = () => {
       <div className="footerContainer">
         <div className="content">
           <p>
-            Elegibility <span>Criteria</span>
+            Our <span>Programs</span>
           </p>
           <ul>
             <div className="items">
               <span></span>
-              <li>
-                Must be in secondary school and of resident in <span>CMR</span>
-              </li>
+              <li>TiC Summit.</li>
             </div>
             <div className="items">
               <span></span>
-              <li>Between the age os 13-20 years</li>
+              <li>TiC Startup Fellowship.</li>
             </div>
             <div className="items">
               <span></span>
-              <li>Be passionate about solving problems in your community.</li>
+              <li>TiC Bootcamps.</li>
+            </div>
+            <div className="items">
+              <span></span>
+              <li>Tech Services.</li>
             </div>
           </ul>
         </div>

@@ -17,6 +17,18 @@
 
 .Special p span {
   font-weight: bold;
+  position: relative;
+}
+
+.Special p span::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  width: 100%;
+  background: var(--black);
+  bottom: -5px;
+  transition: 0.5s ease-in-out;
 }
 
 .Special img {
@@ -43,17 +55,18 @@
 .specialContainer .leftSpecial .specials {
   width: 100%;
   display: flex;
-  margin: 5px 0;
   align-items: center;
+  justify-content: center;
+  margin: 5px 0;
   background: var(--light__blue);
-  height: 150px;
+  height: 100%;
 }
 .specialContainer .leftSpecial .specials .p {
   width: 20%;
-  background: var(--light__blue);
+  justify-content: center;
+  align-items: center;
   height: 100%;
   display: flex;
-  justify-content: center;
   font-size: 90px;
   text-align: center;
   color: var(--yellow);
@@ -67,6 +80,9 @@
   padding-top: 20px;
   padding-left: 20px;
   transition: var(--trans);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Special .specialContainer .rightSpecial {
