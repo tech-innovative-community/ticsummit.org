@@ -49,6 +49,11 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/bootcamp" className="link">
+                  Bootcamp
+                </Link>
+              </li>
+              <li>
                 <Link to="/faq" className="link">
                   FAQ
                 </Link>

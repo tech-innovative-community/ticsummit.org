@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
 import "./sidebar.scss";
 
@@ -7,9 +7,9 @@ const Sidebar = () => {
   const { user } = useContext(AuthContext);
   const data = user.user;
   const [active, setActive] = useState(1);
-  // const location = useLocation();
-  // const pathname = location.pathname.slice(2);
-  // console.log(pathname);
+  let location = useLocation();
+  // let page = location.pathname.slice(1);
+  // console.log(page);
 
   const handleLogOut = () => {
     localStorage.removeItem("user");

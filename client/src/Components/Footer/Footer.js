@@ -95,7 +95,7 @@ const Footer = () => {
             >
               <i className="fa-brands fa-facebook-square"></i>
             </a>
-            <a href="">
+            <a href="#home">
               <i className="fa-brands fa-twitter-square"></i>
             </a>
           </div>
