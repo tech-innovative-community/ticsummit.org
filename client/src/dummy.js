@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import { img1, img2, img3 } from "./Images";
 
 export const columnData = [
   {
@@ -57,5 +58,26 @@ export const columnData = [
         title: "Card 9",
       },
     ],
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    userImg: img1,
+    username: "Developer@miles",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto, suscipit perspiciatis fugit error ex. Deserunt, nemo, perferendis maxime saepe, pariatur repudiandae fuga vel recusandae harum eos eaque soluta eum?",
+  },
+  {
+    id: 1,
+    userImg: img2,
+    username: "Coder@miles",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto, suscipit perspiciatis fugit error ex. Deserunt, nemo, perferendis maxime saepe, pariatur repudiandae fuga vel recusandae harum eos eaque soluta eum?",
+  },
+  {
+    id: 1,
+    userImg: img3,
+    username: "Milestone@miles",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam iusto, suscipit perspiciatis fugit error ex. Deserunt, nemo, perferendis maxime saepe, pariatur repudiandae fuga vel recusandae harum eos eaque soluta eum?",
   },
 ];

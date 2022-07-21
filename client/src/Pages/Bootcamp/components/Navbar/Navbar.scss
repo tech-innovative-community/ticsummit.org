@@ -11,8 +11,9 @@
   padding: 0 10%;
 
   &.present {
-    backdrop-filter: blur(17px);
-    box-shadow: 0 0px 10px rgb(0, 0, 0, 0.7);
+    background: hsl(0 0% 100% / 0.8);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0px 10px rgb(0, 0, 0, 0.2);
     color: var(--blue);
   }
 
@@ -46,6 +47,9 @@
       flex: 0.7;
       align-items: center;
       justify-content: space-between;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
 
       .navabr__routes {
         display: flex;
@@ -67,6 +71,77 @@
         &:hover {
           background: var(--blue);
           color: var(--white);
+        }
+      }
+    }
+
+    .responsiveMenu {
+      display: none;
+
+      @media screen and (max-width: 800px) {
+        position: relative;
+        overflow: hidden;
+        display: block;
+
+        .hamburger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          overflow: hidden;
+          transition: all var(--trans);
+
+          span {
+            width: 30px;
+            height: 4px;
+            border-radius: 3px;
+            background: var(--white);
+            transition: all var(--trans);
+            margin: 2px 0;
+
+            &.change {
+              background: var(--blue);
+            }
+          }
+        }
+
+        .responsiveMenuRoutes {
+          position: fixed;
+          width: 60vw;
+          height: calc(100vh - 70px);
+          top: 70px;
+          background: whitesmoke;
+          transition: all var(--trans);
+          padding: 1rem;
+          color: var(--text-color);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        button {
+          padding: 0.3rem 4rem;
+          background: white;
+          color: var(--blue);
+          border-radius: 5px;
+          transition: var(--trans);
+
+          &:hover {
+            background: var(--blue);
+            color: var(--white);
+          }
+        }
+        .navabr__routes {
+          .route {
+            margin: 1rem 0;
+            color: var(--blue);
+          }
         }
       }
     }
