@@ -12,9 +12,8 @@ const Landing = () => {
         <div className="rightLanding">
           <div className="topRight__landing">
             <p className="header">
-              {" "}
               Inspiring and Empowering the next <span>generation</span> of
-              african techprenuers
+              techprenuers
             </p>
 
             <p className="desc">

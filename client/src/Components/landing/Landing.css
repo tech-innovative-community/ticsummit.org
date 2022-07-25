@@ -49,6 +49,8 @@
   margin-top: 20px;
   line-height: 30px;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .rightLanding .header span {
@@ -57,11 +59,12 @@
 }
 .rightLanding .header span::after {
   content: "";
-  width: 10%;
+  position: absolute;
   height: 3px;
+  left: 0;
+  width: 100%;
   background: var(--pink);
-  display: block;
-  margin: auto;
+  bottom: -5px;
   transition: 0.5s ease-in-out;
 }
 

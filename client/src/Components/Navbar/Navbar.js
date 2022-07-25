@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <div className={changeColor ? "nav addedColor" : "nav"}>
       <div className="navLeft">
-        <Link to="/login " className="link">
+        <Link to="/" className="link">
           <img src={logo} alt="Tech Innvation Challenge" />
         </Link>
       </div>
@@ -49,8 +49,18 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/bootcamp" className="link">
+                  Bootcamp
+                </Link>
+              </li>
+              <li>
                 <Link to="/faq" className="link">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/login" className="link">
+                  Login
                 </Link>
               </li>
             </ul>
@@ -86,9 +96,9 @@ const Nav = () => {
             setNav(!nav) || setAnnim(annim === "close" ? "open" : "close")
           }
         >
-          <span className={annim}></span>
-          <span className={annim}></span>
-          <span className={annim}></span>
+          <span className={nav === false ? "open" : "close"}></span>
+          <span className={nav === false ? "open" : "close"}></span>
+          <span className={nav === false ? "open" : "close"}></span>
         </div>
         <div
           className={changeColor ? "menuRoutes addedColor" : "menuRoutes"}

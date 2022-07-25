@@ -77,16 +77,6 @@
   visibility: visible;
   transition: var(--trans);
 }
-.Questions .faqContainer .questions.vissible1 .answer {
-  opacity: 1;
-  visibility: visible;
-  transition: var(--trans);
-}
-.Questions .faqContainer .questions.vissible2 .answer {
-  opacity: 1;
-  visibility: visible;
-  transition: var(--trans);
-}
 
 @media (max-width: 850px) {
   .FAQ {
@@ -107,7 +97,7 @@
   }
 
   .Questions .faqContainer .questions.vissible {
-    height: 1010px;
+    height: 100%;
   }
 
   .Questions .faqContainer .questions.vissible1 {

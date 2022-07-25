@@ -20,11 +20,12 @@ const Posts = () => {
         });
       } catch (error) {
         setIsError(error);
+        console.log(isError);
       }
     };
     fetchPost();
     console.log(posts);
-  }, []);
+  }, [isError, posts]);
 
   if (posts.length === 0) {
     return (

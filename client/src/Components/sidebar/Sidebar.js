@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthContext";
 import "./sidebar.scss";
 
@@ -7,6 +7,9 @@ const Sidebar = () => {
   const { user } = useContext(AuthContext);
   const data = user.user;
   const [active, setActive] = useState(1);
+  let location = useLocation();
+  // let page = location.pathname.slice(1);
+  // console.log(page);
 
   const handleLogOut = () => {
     localStorage.removeItem("user");
@@ -39,6 +42,14 @@ const Sidebar = () => {
         >
           <Link to="/admin/posts">
             <span>posts</span>
+          </Link>
+        </li>
+        <li
+          onClick={() => setActive(4)}
+          className={active === 4 ? "activeLink on" : "activeLink"}
+        >
+          <Link to="/admin/kanban">
+            <span>Kanban</span>
           </Link>
         </li>
       </ul>

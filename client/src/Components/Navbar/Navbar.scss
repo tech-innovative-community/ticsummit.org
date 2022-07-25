@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
   height: 70px;
-  background: var(--light__blue);
+  background: var(--blue);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -15,8 +15,8 @@
 }
 
 .nav.addedColor {
-  background: var(--blue);
   box-shadow: 0 0px 10px rgb(0, 0, 0, 0.7);
+  background: var(--blue);
 }
 
 .navLeft img {
